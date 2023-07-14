@@ -31,13 +31,19 @@ $censored_paragraph = str_replace($secret_word, '***', $paragraph);
         <!-- Uncensored Section -->
         <div class="uncensored">
             <H1>Testo non censurato</H1>
-            <p><?= $paragraph ?></p>
+            <h3><?= $paragraph ?></h3>
+
+            <!-- Print string length -->
+            <h6>Il paragrafo è lungo <?= strlen($paragraph) ?> caratteri</h6>
         </div>
 
         <!-- Censored Section -->
         <div class="censored">
             <H1>Testo censurato</H1>
-            <p><?= $censored_paragraph ?></p>
+            <h3><?= $censored_paragraph ?></h3>
+
+            <!-- Print string length -->
+            <h6>Il paragrafo è lungo <?= strlen($censored_paragraph) ?> caratteri</h6>
         </div>
     </div>
 
