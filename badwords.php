@@ -1,7 +1,11 @@
 <?php
 
+// Get from index.html
 $secret_word = $_GET[trim("secret-word")];
 $paragraph = $_GET[trim("paragraph")];
+
+// Replace secret_word with censored one
+$censored_paragraph = str_replace($secret_word, '***', $paragraph);
 
 ?>
 
@@ -33,7 +37,7 @@ $paragraph = $_GET[trim("paragraph")];
         <!-- Censored Section -->
         <div class="censored">
             <H1>Testo censurato</H1>
-            <p><?= $paragraph ?></p>
+            <p><?= $censored_paragraph ?></p>
         </div>
     </div>
 
