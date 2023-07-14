@@ -16,6 +16,21 @@
 
 <body>
     <div class="container">
+
+        <form action="badwords.php">
+
+            <label for="secret-word" class="form-label">Parola da censurare</label>
+            <input type="text" name="secret-word" class="form-control" id="secret-word"
+                placeholder="Inserisci la parola da censurare">
+
+
+            <label for="paragraph" class="form-label">Paragrafo</label>
+            <textarea class="form-control" name="paragraph" id="paragraph" rows="5"
+                placeholder="Inserisci il testo"></textarea>
+
+            <button class="btn btn-primary">Submit</button>
+        </form>
+
     </div>
 </body>
 
